@@ -1,0 +1,194 @@
+*, ::before, ::after {
+	box-sizing: border-box;
+	margin : 0; 
+	padding: 0; 
+}
+
+body {
+	height: 70vh;
+}
+
+.accueil {
+    background-image: url(Image/banniere-desktop_mad_1252x410.jpeg);
+    background-repeat: no-repeat;
+  	background-size: cover; 
+    background-position: left;
+}
+
+.Qui_sommes_nous {
+	background-image: url(Image/Qui_sommes_nous/presentation_assoafev_1252_x_410_6.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.text-overlay {
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	color: white;
+	padding: 10px;
+}
+
+.bordure-div {
+	width: 50%;
+	height: 70%;
+	border: 6px solid #ABE7E4; /* largeur, style et couleur de la bordure */
+	border-radius: 10px;
+}
+
+/* Les espaces entre le logo et la navigation*/
+.d11 {
+	float: left;
+}
+
+.d12 {
+	float: center;
+}
+
+
+/* nav active */
+
+.nav-link {
+	transition: all 0.2s;
+}
+
+.nav-link:hover {
+/*	text-decoration: underline; */
+border-bottom: 2px solid greenyellow;
+}
+
+
+
+
+
+
+
+
+/* footer*/
+
+.flexBetween {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer {
+	height: 300px;
+	margin-top: 100px;
+}
+
+footer {
+	margin-top: 60px;
+}
+
+.tailleBlocFoot{
+	height: 150px;
+}
+
+
+.margeBlocFoot1 {
+	margin-left: 5%;
+}
+
+
+
+
+
+
+.lienFoot {
+	color: black;
+}
+
+.divLienFoot {
+	height: 30px;
+}
+
+
+/* <!-- 576 XS -> 576px S >768px M > 992 L > 1200px Extra Large--> */
+
+
+@media screen and (max-width: 414px){
+	.footer {
+		display: block;	
+		display: inline-block;
+		margin-left: 5%;
+
+	
+	}
+
+	.margeBlocMentorat {
+		margin-top: 5%;
+		margin-bottom: 0;
+	}
+
+	
+
+			
+}
+
+
+
+@media screen and (max-width: 768px){
+	.footer {
+		flex-direction: column;
+		
+	}
+	
+
+	.margeBlocMentorat {
+		margin-top: 5%;
+		margin-bottom: 0;
+	}
+
+	.marginLeftTablet1 {
+		margin-left: 10%;
+	}
+
+
+
+	.marginLeftTablet3 {
+		margin-left: 0;
+	}
+
+	.marginTopTablet {
+		margin-top: 5%;
+	}
+}
+
+
+
+@media screen and (min-width: 769px){
+	.footer {
+		flex-wrap: wrap;
+	}
+
+	.margeBlocMentorat {
+		margin-top: 5%;
+		margin-bottom: 0;
+	}
+
+	.marginLeft {
+		margin-left: 5%;
+	}
+
+
+	.margeBlocFoot3 {
+		margin-right: 15%;
+	}
+	
+}
+
+
+
+
+.ReseauxSocial {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.social {
+	padding: 20px;
+}
+
